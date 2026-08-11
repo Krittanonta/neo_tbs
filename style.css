@@ -216,17 +216,6 @@
       z-index:5;
     }
 
-    .eyebrow{
-      color:var(--tu-red);
-      font-size:.72rem;
-      font-weight:800;
-      letter-spacing:.28em;
-      text-transform:uppercase;
-      margin-bottom:.75rem;
-      opacity:0;
-      animation:fadeUp .8s .15s forwards;
-    }
-
     .hero-title{
       margin:0;
       font-family:"line";
@@ -351,6 +340,7 @@
     .campus:nth-child(4){--i:3}
 
     .scroll-cue{
+        font-family:"line";
       position:absolute;
       left:50%;
       bottom:1rem;
@@ -386,7 +376,7 @@
     }
     .below h2{
       font-family:"line";
-      font-size:clamp(2rem,4vw,4rem);
+      font-size:clamp(1.5rem,4vw,4rem);
       font-weight:500;
     }
     .below p{
