@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: "line";
     src: url("fonts/LINESeedSansTH_W_Th.woff2") format("woff2");
@@ -43,7 +45,6 @@
       margin:0;
       color:var(--ink);
       background:#fff;
-      font-family:"line";
       overflow-x:hidden;
     }
 
@@ -86,7 +87,7 @@
       align-items:center;
       gap:.75rem;
       text-decoration:none;
-      color:var(--tu-red);
+      color: #ffffff;
       flex:0 0 auto;
     }
 
@@ -98,14 +99,17 @@
     }
 
     .brand-copy{
-        font-family:"line";
+      font-size: 1.25rem;
+       font-family: "Barlow Semi Condensed", sans-serif;
       line-height:1.08;
       font-weight:700;
-      letter-spacing:.01em;
+      letter-spacing:.05em;
     }
 
     .brand-copy small{
-        font-family:"line";
+      letter-spacing:.05em;
+      font-size: .83rem;
+      font-family: "Barlow Semi Condensed", sans-serif;
         font-weight:700;
       display:block;
       margin-top:3px;
@@ -120,12 +124,12 @@
     }
 
     .main-nav a{
-        font-family:"line";
+      font-family: "Barlow Semi Condensed", sans-serif;
       position:relative;
-      color:#000000;
+      color:#ffffff;
       text-decoration:none;
       font-weight:400;
-      font-size:.9rem;
+      font-size:1.1rem;
       white-space:nowrap;
       padding:.35rem 0;
     }
@@ -147,7 +151,7 @@
       display:flex;
       align-items:center;
       gap:1rem;
-      color:var(--tu-red);
+      color: #ffffff;
     }
 
     .header-actions button{
@@ -210,7 +214,7 @@
 
     .hero-title{
       margin:0;
-      font-family:"line";
+      font-family: "Barlow Semi Condensed", sans-serif;
       font-size:clamp(2.4rem,5vw,5.5rem);
       font-weight:600;
       letter-spacing:-.035em;
@@ -220,11 +224,11 @@
     }
 
     .hero-title span{
-      color:var(--tu-red);
+      color: #1d72b8;
     }
 
     .hero-subtitle{
-        font-family:"line";
+      font-family: "Barlow Semi Condensed", sans-serif;
       margin:.9rem auto 0;
       max-width:620px;
       color:#666;
@@ -259,7 +263,7 @@
     }
 
     .campus-name{
-        font-family:"line";
+      font-family: "Barlow Semi Condensed", sans-serif;
       position:absolute;
       top:0;
       left:50%;
@@ -284,7 +288,7 @@
       width:min(285px,90%);
       aspect-ratio:1;
       border-radius:50%;
-      background:linear-gradient(135deg,#ffbf3f 0%,#f68b2b 45%,#c3002f 100%);
+      background:linear-gradient(135deg,#ffffff 0%,#91c3ec 45%,#ffffff 100%);
       transform:translate(-50%,15%) scale(.55);
       opacity:0;
       filter:saturate(1.05);
@@ -332,7 +336,7 @@
     .campus:nth-child(4){--i:3}
 
     .scroll-cue{
-        font-family:"line";
+      font-family: "Barlow Semi Condensed", sans-serif;
       position:absolute;
       left:50%;
       bottom:1rem;
@@ -367,12 +371,12 @@
       text-align:center;
     }
     .below h2{
-      font-family:"line";
+      font-family: "Barlow Semi Condensed", sans-serif;
       font-size:clamp(2rem,2.5vw,4rem);
       font-weight:700;
     }
     .below p{
-        font-family:"line";
+      font-family: "Barlow Semi Condensed", sans-serif;
       max-width:620px;
       color:#aaa;
       margin:1rem auto 0;
@@ -421,7 +425,7 @@
 
       .main-nav{display:none}
       .nav-shell{padding:0 1rem}
-      .brand-copy{font-size:.9rem}
+      .brand-copy{font-size:1.5rem}
 
       .campus-stage{
         grid-template-columns:repeat(2,1fr);
@@ -470,3 +474,83 @@
         transition-duration:.001ms !important;
       }
     }
+
+    .video-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.video-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.video-content {
+  font-family: "Barlow Semi Condensed", sans-serif; 
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+}
+
+.video-content h1 {
+  margin-bottom: 30px;
+  font-size: clamp(48px, 8vw, 110px);
+  line-height: 0.95;
+  font-weight: 500;
+}
+
+.video-description {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.video-button {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  border-radius: 20rem;
+  display: inline-block;
+  padding: 14px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.video-button:hover {
+  background: #fff;
+  color: #1d72b8
+}
+
+@media (max-width: 768px) {
+  .video-content {
+    padding: 25px;
+  }
+
+  .video-content h1 {
+    font-size: clamp(42px, 14vw, 75px);
+  }
+
+  .video-description {
+    font-size: 16px;
+  }
+}
